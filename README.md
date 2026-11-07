@@ -1,6 +1,6 @@
 # DevOps Intern Task – Containerized Node.js Application
 
-![CI Pipeline](https://github.com/cyraxabir/nodejs-sample/actions/workflows/ci.yml/badge.svg)
+![CI Pipeline](https://github.com/cyraxabir/node.js-sample/actions/workflows/ci.yml/badge.svg)
 
 A minimal, production-ready Node.js web application with Docker containerization, GitHub Actions CI/CD, and Linux automation scripting.
 
@@ -43,7 +43,7 @@ A minimal, production-ready Node.js web application with Docker containerization
 
 ```bash
 # Clone the repository
-git clone https://github.com/cyraxabir/nodejs-sample.git
+git clone https://github.com/cyraxabir/node.js-sample.git
 cd nodejs-sample
 
 # Build and start the container
