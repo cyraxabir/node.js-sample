@@ -1,6 +1,6 @@
 # DevOps Intern Task – Containerized Node.js Application
 
-![CI Pipeline](https://github.com/cyraxabir/node.js-sample/actions/workflows/ci.yml/badge.svg)
+![CI Pipeline]
 
 A minimal, production-ready Node.js web application with Docker containerization, GitHub Actions CI/CD, and Linux automation scripting.
 
@@ -87,10 +87,12 @@ npm start
 | **Lightweight base image** | `node:20-alpine` (~50 MB) |
 | **Multi-stage build** | Stage 1 installs deps → Stage 2 copies only production artifacts |
 | **Non-root user** | Runs as `appuser` (not root) |
-| **Proper signal handling** | Uses `dumb-init` as PID 1 |
+| **Native signal handling** | Node.js 20+ handles SIGTERM natively (no `dumb-init` required) |
+| **Efficient COPY** | Uses `--chown` flag inline to avoid extra layer |
 | **Layer caching** | `package.json` copied before source for optimal cache |
-| **Health check** | Built-in `HEALTHCHECK` instruction |
+| **Native health check** | Built-in `HEALTHCHECK` using Node.js HTTP client (no external tools) |
 | **Minimal context** | `.dockerignore` excludes tests, docs, git history |
+| **Production optimized** | Omits dev dependencies; enables source maps for debugging |
 
 ### Build Manually
 
