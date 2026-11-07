@@ -1,0 +1,21 @@
+{
+  "name": "devops-intern-task",
+  "version": "1.0.0",
+  "description": "Minimal Node.js web application for DevOps containerization task",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "lint": "eslint src/",
+    "test": "node --test src/server.test.js"
+  },
+  "keywords": ["devops", "docker", "node"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0"
+  }
+}

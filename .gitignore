@@ -1,0 +1,4 @@
+node_modules/
+health_log.txt
+*.log
+.env

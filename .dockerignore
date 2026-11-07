@@ -1,0 +1,12 @@
+# Docker-compose override to keep the image build out of production compose
+node_modules/
+npm-debug.log*
+.git/
+.github/
+.eslintrc.json
+*.md
+LICENSE
+scripts/
+health_log.txt
+.dockerignore
+docker-compose.yml
