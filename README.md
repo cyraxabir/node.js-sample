@@ -1,6 +1,4 @@
-# DevOps Intern Task – Containerized Node.js Application
-
-![CI Pipeline]
+# Containerized Node.js Application
 
 A minimal, production-ready Node.js web application with Docker containerization, GitHub Actions CI/CD, and Linux automation scripting.
 
