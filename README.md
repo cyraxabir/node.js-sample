@@ -42,7 +42,7 @@ A minimal, production-ready Node.js web application with Docker containerization
 ```bash
 # Clone the repository
 git clone https://github.com/cyraxabir/node.js-sample.git
-cd nodejs-sample
+cd node.js-sample
 
 # Build and start the container
 docker-compose up --build -d

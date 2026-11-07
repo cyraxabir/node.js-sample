@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: devops-intern-app
+    container_name: nodejs-app
     ports:
       - "8080:8080"
     environment:
