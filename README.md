@@ -1,6 +1,6 @@
 # DevOps Intern Task – Containerized Node.js Application
 
-![CI Pipeline](https://github.com/<your-username>/nodejs-sample/actions/workflows/ci.yml/badge.svg)
+![CI Pipeline](https://github.com/cyraxabir/nodejs-sample/actions/workflows/ci.yml/badge.svg)
 
 A minimal, production-ready Node.js web application with Docker containerization, GitHub Actions CI/CD, and Linux automation scripting.
 
@@ -43,7 +43,7 @@ A minimal, production-ready Node.js web application with Docker containerization
 
 ```bash
 # Clone the repository
-git clone https://github.com/<your-username>/nodejs-sample.git
+git clone https://github.com/cyraxabir/nodejs-sample.git
 cd nodejs-sample
 
 # Build and start the container
@@ -209,9 +209,9 @@ Here's how you would deploy this container to an AWS EC2 instance:
 
 2. **Pull and run the image from Docker Hub** – Since the CI pipeline pushes the image to Docker Hub on every merge to `main`, deploying is a single command:
    ```bash
-   docker pull <your-dockerhub-user>/devops-intern-task:latest
+   docker pull cyrax001/devops-intern-task:latest
    docker run -d --name app --restart unless-stopped -p 80:8080 \
-     <your-dockerhub-user>/devops-intern-task:latest
+     cyrax001/devops-intern-task:latest
    ```
 
 3. **Automate future deployments** – Add a **deployment job** to the GitHub Actions workflow that SSHs into the EC2 instance (using a stored SSH key in GitHub Secrets) and runs `docker pull && docker restart`. Alternatively, use **AWS ECS / Fargate** for a fully managed solution with auto-scaling, health checks, and zero-downtime rolling updates—no SSH required.
